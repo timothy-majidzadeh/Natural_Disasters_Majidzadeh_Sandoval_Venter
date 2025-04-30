@@ -1,0 +1,232 @@
+/* General body styles */
+body {
+    position: relative; /* Allows positioning of child elements */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-family: Arial, sans-serif; /* Sets the font family */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Styles for the navigation bar */
+.navbar {
+    position: fixed; /* Fixes the navbar to the top of the screen */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    background-color: transparent; /* Makes the navbar background transparent */
+}
+
+/* Styles for the navbar toggle button */
+.navbar-toggler {
+    position: absolute;
+    top: 10px; /* Positions the button at the top */
+    right: 10px; /* Positions the button at the right */
+    width: 40px;
+    height: 40px;
+    border: none; /* Removes the default border */
+    background-color: #007bff; /* Solid blue background */
+    color: white; /* White color for the text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050; /* Ensures the button is on top of the menu */
+}
+
+/* Styles for the navbar toggle icon */
+.navbar-toggler-icon {
+    background-image: none; /* Removes the default icon */
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Additional styles for the navbar toggle icon */
+.navbar-toggler-icon::before, .navbar-toggler-icon::after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Position adjustments for the navbar toggle icon */
+.navbar-toggler-icon::before {
+    top: -7px;
+}
+.navbar-toggler-icon::after {
+    top: 7px;
+}
+
+/* Styles for the collapsed state of the navbar toggle button */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    background-color: white;
+}
+.navbar-toggler.collapsed .navbar-toggler-icon::before {
+    top: 0;
+}
+.navbar-toggler.collapsed .navbar-toggler-icon::after {
+    top: 0;
+}
+
+/* Styles for the navbar links */
+.navbar-nav .nav-link {
+    color: #000; /* Dark text color */
+}
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Styles for the scrollspy example */
+.scrollspy-example {
+    position: relative;
+    margin-top: .5rem;
+}
+
+/* Styles for the expanded navbar menu */
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Opaque background */
+    padding-top: 60px; /* Aligns with the main content padding */
+    z-index: 1001; /* Ensures it is above other content */
+}
+
+/* Styles for the navbar items */
+.navbar-nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Styles for the welcome container */
+.welcome-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh; /* Takes up half the screen height */
+    z-index: -1; /* Stays behind other content */
+    overflow: hidden;
+}
+
+/* Styles for the welcome image */
+.welcome-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Styles for the welcome text */
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+}
+
+/* Styles for the main content area */
+.main-content {
+    margin-top: 50vh; /* Pushes content below the welcome image */
+    padding-top: 0; /* Aligns content with navbar height */
+    background-color: white; /* Background color */
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* General styles for sections */
+.section {
+    padding: 40px;
+    margin: 0; /* Full width sections */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Styles for section headers */
+.section h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for section paragraphs */
+.section p {
+    text-align: center;
+}
+
+/* Styles for Tableau containers */
+.tableau-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Styles for Tableau placeholders */
+.tableauPlaceholder {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: calc(66.6vw * 0.75); /* Maintain the aspect ratio */
+    background: transparent; /* Ensures the background is transparent */
+}
+
+/* Styles for images between sections */
+.between-section-image {
+    width: 100%;
+    height: 50vh; /* Adjust height as needed */
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gradient effect for sections */
+.section1 {
+    background-color: #ffe6e6; /* Very light red */
+}
+.section2 {
+    background-color: #ffdbdb; /* Light red */
+}
+.section3 {
+    background-color: #ffd1d1; /* Light red */
+}
+.section4 {
+    background-color: #ffc6c6; /* Light red */
+}
+.section5 {
+    background-color: #ffbaba; /* Soft red */
+}
+.section6 {
+    background-color: #ffb0b0; /* Medium red */
+}
+.section7 {
+    background-color: #ffa5a5; /* Bright red */
+}
+.section8 {
+    background-color: #ff8080; /* Strong red */
+}
+
+/* Link color adjustments */
+a {
+    color: #0056b3; /* Darker blue for links */
+    font-weight: bolder; /* Make links bold */
+}
+a:hover {
+    color: #00264d; /* Even darker blue on hover */
+}

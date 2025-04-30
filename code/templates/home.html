@@ -1,0 +1,103 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="scrollspy-example">
+    <div id="introduction" class="section section1">
+        <h4>Introduction</h4>
+        <p>The causes, effects and dangers of climate change are well-known in the academic community. Scientists first established a link between atmospheric Carbon Dioxide (CO2) and global temperature <a href=https://doi.org/10.1175/1520-0469(1967)024%3C0241:TEOTAW%3E2.0.CO;2>in 1967</a>, and have known about rising CO2 levels since <a href=https://doi.org/10.1111/j.2153-3490.1976.tb00701.x>at least 1976</a>. Analysis continues <a href=https://doi.org/10.1007/s11356-022-19718-6>to this day</a> as researchers race to understand the exact causes, effects, and risks of climate change.</p>
+
+        <p>It is critical for leaders and citizens to understand how climate change is progressing the U.S., the damage it has already caused, and the incredible danger it poses in the future. This website highlights the relationships and risk areas of U.S. temperature increases, natural disasters, and the costs of these disasters.</p>
+    </div>
+    <div id="avg_temp_line" class="section section2">
+        <h4>Temperatures are Increasing Across the United States</h4>
+        <p>The average nationwide temperature has increased by 3 degrees since 1960. Almost every state has seen its own increase.</p>
+
+        <p><a href=https://climate.nasa.gov/news/2865/a-degree-of-concern-why-global-temperatures-matter/>Scientists understand that a mere 1 to 2 degrees of warming</a> can have a substantial impact on the rate of natural disasters, biodiversity, sea levels, and human health.</p>
+
+        <p>Use the 'State' filter boxes, or hover over the graph, to explore how temperature has changed for individual states since 1960.</p>
+
+        <div class='tableauPlaceholder' id='viz1722815672996' style='position: relative'><noscript><a href='#'><img alt='Temperature Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;TempLine&#47;TemperatureDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TempLine&#47;TemperatureDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;TempLine&#47;TemperatureDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1722815672996');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>
+
+    <div id="temp_disaster_corr" class="section section3">
+        <h4>Local Temperature Increases are Correlated with Local Natural Disasters</h4>
+        <p>Natural disasters can grow more frequent or intense as a result of climate change. We observe that states experiencing a greater temperature change also experience more disasters per square mile.</p>
+
+        <p>Explore this correlation by hovering over the points to see each state's disaster intensity per square mile and average temperature change, and by using the checkboxes to select specific states.</p>
+
+<div class='tableauPlaceholder' id='viz1722815741092' style='position: relative'><noscript><a href='#'><img alt='Correlation Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;TemperatureDisastersCorrelation&#47;CorrelationDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TemperatureDisastersCorrelation&#47;CorrelationDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;TemperatureDisastersCorrelation&#47;CorrelationDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1722815741092');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>        <p>Note: Rhode Island is excluded from the default visualization because it is an outlier. Try including it using the checkbox filters to see its extreme intensity value.</p>
+
+    </div>
+
+    <div id="disasters_map_state" class="section section4">
+        <h4>Disasters are Unevenly Distributed Across the U.S.</h4>
+
+        <p>Disasters can be plotted at the level of states and counties to understand which geographies are most impacted.</p>
+
+        <p>Use the 'Type' and 'Year(s)' dropdown menus above the maps to explore how the U.S. was affected by different types of disasters for the past 20 years.</p>
+
+        <div class='tableauPlaceholder' id='viz1722716168180' style='position: relative'><noscript><a href='#'><img alt='FEMA Natural Disasters Since 2003 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FE&#47;FEMADisasters-GeographicDashboard&#47;MapsDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FEMADisasters-GeographicDashboard&#47;MapsDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FE&#47;FEMADisasters-GeographicDashboard&#47;MapsDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1722716168180');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+    <div id="disasters_map_county" class="section section5">
+        <h4>FEMA Documents Additional Detail for Each Disaster</h4>
+
+        <p>FEMA data documents the name, location, and type of each disaster declared within the past 20 years.</p>
+
+        <p>Use the 'Category', State(s) and 'Year(s)' dropdown menus to explore lists of specific disasters in the United States over time. Click on the column labels in the list to learn which counties are most heavily affected by specific types of disasters.</p>
+
+        <div class='tableauPlaceholder' id='viz1722717004469' style='position: relative'><noscript><a href='#'><img alt='FEMA Natural Disasters Since 2003 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;KB&#47;KB75NGG39&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;KB75NGG39' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;KB&#47;KB75NGG39&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1722717004469');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='1366px%';vizElement.style.height='1227px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+    <div id="disasters_map_intensity" class="section section6">
+        <h4>Rate of Disasters by State Size Highlights Heavily-Affected States</h4>
+
+        <p>Some states may have more natural disasters within their borders simply due to being larger. "Intensity" - a normalized measurement which is the number of disasters divided by square mileage - shows that certain states, like California, are vulnerable to natural disasters even when adjusting for their size.</p>
+
+        <p>Use the dropdown menus to explore how intensity varies for certain types of natural disasters and certain years.</p>
+
+        <div class='tableauPlaceholder' id='viz1722721837831' style='position: relative'><noscript><a href='#'><img alt='Intensity Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FE&#47;FEMADisasters-StateLevelIntensity&#47;IntensityDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FEMADisasters-StateLevelIntensity&#47;IntensityDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FE&#47;FEMADisasters-StateLevelIntensity&#47;IntensityDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1722721837831');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='1366px%';vizElement.style.height='795px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+    <div id="cost_bar" class="section section7">
+        <h4>Climate Change and Increasing Natural Disasters are Destructive and Costly for Americans</h4>
+        <p>Over the past 3 years, the average cost of FEMA-declared natural disasters has been over <b>$420.9 billion</b> US Dollars, after adjusting for inflation. These costs have been gradually increasing since the early 2000's.</p>
+    
+        <div class='tableauPlaceholder' id='viz1720909193962' style='position: relative'><noscript><a href='#'><img alt='Total Annual Cost of Billion Dollar Natural Disasters Since 1980with 3 Year Moving Average ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DisasterCost&#47;CostSummary&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DisasterCost&#47;CostSummary' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DisasterCost&#47;CostSummary&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1720909193962');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1366px';vizElement.style.height=height='795px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+    </div>
+
+
+    <div id="outro" class="section section8">
+        <h4>Acknowledgements</h4>
+
+        <p>This website was created by Timothy Majidzadeh, Jorgé Sandoval, and James Venter for the UC Berkeley MIDS Datasci 209 Summer Term. <b>Timothy</b> created the temperature chart, prototyped the website, wrote the explanatory text for the website, contributed to website formatting, and documented citations. <b>Jorgé</b> prototyped visualizations relating to the increasing rate of disasters over time, added the website's scrolling & navigation functions, and finalized the website formatting. <b>James</b> created four dashboards demonstrating the geographic distribution of disasters across the U.S., and developed the 'Intensity' measure used across multiple dashboards.</p>
+
+        <p>This website relies on data from the National Centers for Environmental Information and the Federal Emergency Management Agency.</p>
+
+        <p>We also thank our beta testers for their feedback for improving this website: Evan W., Yifan Y., Scott T., Meg D., Peter V., Axel, Myles, and Tahnea, in addition to other anonymous testers.</p>
+
+        <h4>Works Cited</h4>
+
+        <p>    Alan Buis, "A Degree of Concern: Why Global Temperatures Matter: Part 2," National Aeronautics and Space Administration, June 19, 2019, available at <a href=https://climate.nasa.gov/news/2865/a-degree-of-concern-why-global-temperatures-matter/>https://climate.nasa.gov/news/2865/a-degree-of-concern-why-global-temperatures-matter/</a>.</p>
+
+        <p>    "County Time Series", National Centers for Environmental Information, available at <a href=https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/county/time-series>https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/county/time-series</a>.</p>
+
+        <p>    "Statewide Time Series", National Centers for Environmental Information, available at <a href=https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/statewide/time-series>https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/statewide/time-series</a>.</p>
+
+        <p>    "National Time Series", National Centers for Environmental Information, available at <a href=https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/time-series>https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/time
+
+        <p>    "OpenFEMA Dataset: Disaster Declaraions Summaries - v2," Federal Emergency Management Agency, available at <a href=https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2>https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2</a>.</p>
+
+        <p>    Usability Studies with Evan W., Yifan Y., Scott T., Meg D., Peter V., Axel, Myles, Tahnea, and other anonymous contributors.</p>
+
+        <p>    Manabe, S., and Wetherald, R., "Thermal Equilibrium of the Atmosphere with a Given Distribution of Relative Humidity," Journal of the Atmospheric Sciences Vol. 24, Iss. 3, May 1, 1967, pp. 241-259, available at <a href=https://doi.org/10.1175/1520-0469(1967)024%3C0241:TEOTAW%3E2.0.CO;2>https://doi.org/10.1175/1520-0469(1967)024%3C0241:TEOTAW%3E2.0.CO;2</a>.</p>
+
+        <p>    Keeling, C., et al., "Atmospheric carbon dioxide variations at Mauna Loa Observatory, Hawaii," Tellus Vol. 28, Iss. 6, December 1976, pp. 538-551, available at <a href=https://doi.org/10.1111/j.2153-3490.1976.tb00701.x>https://doi.org/10.1111/j.2153-3490.1976.tb00701.x</a>.</p>
+
+        <p>    Abbass, K., et al., "A review of the global climate change impacts, adaptation, and sustainable mitigation measures," Environmental Science and Pollution Research, Vol. 29, pp. 42539-42559, April 4, 2022, available at <a href=https://doi.org/10.1007/s11356-022-19718-6>https://doi.org/10.1007/s11356-022-19718-6</a>.</p>
+
+    </div>
+
+</div>
+
+{% endblock %}
